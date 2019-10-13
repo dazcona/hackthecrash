@@ -5,6 +5,8 @@ We developed a Machine Learning pipeline to predict accident severity and a Chat
 * Slides: [Insighters Hack the Crash at HackUPC 2019](https://docs.google.com/presentation/d/1sK5sU6ylB1pbYWWhIcHx5wlWGj2-LtTnmiU1Fhd6T_Y/edit?usp=sharing)
 * YouTube: [Video](https://www.youtube.com/watch?v=fVg1szW6j-s)
 
+The submission for the predictions is [here](submission.csv)
+
 ## Motivation
 
 Rate of road-accidents and fatality in the UK is very high
@@ -40,11 +42,12 @@ Predicting accident severity will help the authorities closely monitor accident 
 6. [Split the data](src/notebooks/5.%20Split%20Train%20and%20Val%20sets.ipynb): split the dataset into Train and Validation sets
 7. [Modelling a classification model](src/notebooks/6.%20Modelling.ipynb):
    * Model a Random Forest classifier and analyse the power of their features
-   * Transform the text of the information regarding the accident and the vehicles involved using NLP techniques such as [TF-IDF](src/notebooks/6.%20Modelling%20with%20TF-IDF.ipynb) & [Embeddings](6.%20Modelling%20with%20Embeddings.ipynb)
+   * Transform the text of the information regarding the accident and the vehicles involved using NLP techniques such as [TF-IDF](src/notebooks/6.%20Modelling%20with%20TF-IDF.ipynb) & [Embeddings](src/notebooks/6.%20Modelling%20with%20Embeddings.ipynb)
    * Ensembling our individual models
 8. Ablation studies: fitting a Linear Regression model and running ablation studies to measure the variance explained by the features
 9. Mutual Information Exploration: measuring the mutual information (mutual dependence between two variables) of each of the features we figured as important (based on the ablation study) and the precision mark.
-10. [Hyper-parameter tuning](7.%20Hyper-parameter%20Tuning.ipynb): tune the model
+10. [Hyper-parameter tuning](src/notebooks/10.%20Hyper-parameter%20Tuning.ipynb): tune the model
+11. [Train the final model](src/notebooks/11.%20Test%20final%20model.ipynb): train the final model and build the submission file
 
 You can always view a notebook using https://nbviewer.jupyter.org/
 
