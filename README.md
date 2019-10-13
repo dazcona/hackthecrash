@@ -1,6 +1,4 @@
-# McKinsey & Company: Hack the Crash! at HackUPC 2019
-
-Insighters Hack the Crash! at HackUPC 2019
+# Insighters Hack the Crash! at HackUPC 2019 for McKinsey & Company
 
 We developed a Machine Learning pipeline to predict accident severity and a ChatBot that provides bite-sized advice to drivers!
 
