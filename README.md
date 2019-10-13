@@ -1,5 +1,12 @@
 # McKinsey & Company: Hack the Crash! at HackUPC 2019
 
+Insighters Hack the Crash! at HackUPC 2019
+
+We developed a Machine Learning pipeline to predict accident severity and a ChatBot that provides bite-sized advice to drivers!
+
+* Slides: [Insighters Hack the Crash at HackUPC 2019](https://docs.google.com/presentation/d/1sK5sU6ylB1pbYWWhIcHx5wlWGj2-LtTnmiU1Fhd6T_Y/edit?usp=sharing)
+* YouTube: [Video](https://www.youtube.com/watch?v=fVg1szW6j-s)
+
 ## Motivation
 
 Rate of road-accidents and fatality in the UK is very high
@@ -55,6 +62,8 @@ You can always view a notebook using https://nbviewer.jupyter.org/
 * [scikit-learn](https://scikit-learn.org/)
 * [pillow](https://pillow.readthedocs.io/)
 * [jupyter](https://jupyter.org/)
+* [Telegram](https://telegram.org/)
+* [Python Telegram Bot](https://github.com/python-telegram-bot/python-telegram-bot)
 
 ## Figures
 
@@ -69,3 +78,7 @@ You can always view a notebook using https://nbviewer.jupyter.org/
 
 **Random Forest**: Forest Importances:
 ![](figures/modelling_Random_Forest_Top_10_Feature_Importances.png)
+
+**ChatBot**: Bite-size driving advice:
+![](figures/bot1.jpeg)
+![](figures/bot2.jpeg)
