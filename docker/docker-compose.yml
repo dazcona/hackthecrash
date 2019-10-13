@@ -1,0 +1,47 @@
+version: '2.3'
+
+services:
+
+  my_container:
+    image: ac_image
+    container_name: ac_container
+    working_dir: /code
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+
+# Setup environment variables:
+    environment:
+      - PYTHONPATH=/code
+      # Uncomment the following line to plot images on Linux
+      #- DISPLAY=unix$DISPLAY
+      # Set a password to your Jupyter Notebook
+      - PASSWORD=testpass
+      
+# Setup the ports you want to expose:
+    ports:
+      # Jupyter port
+      - "6002:8888"
+
+# Setup the volumes you want to share:
+    volumes:
+      - ../:/code
+
+# Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
+    # runtime: nvidia
+
+# By default this container stay alive without running any command 
+    command: jupyter notebook --allow-root --ip=0.0.0.0
+# If installed, you can start Jupyter Notebook every time you run the container
+    #command: jupyter notebook --allow-root --ip=0.0.0.0
+
+# Start a Tensorboard on localhost:6006 that process the logs folder
+  tensorboard:
+    image: tensorflow/tensorflow
+    container_name: tensorboard
+    working_dir: /logs
+    ports:
+     - "6006:6006"
+    volumes:
+      - ../logs:/logs
+    command: tensorboard --logdir /logs # --port=6007

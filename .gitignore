@@ -1,0 +1,16 @@
+*.DS_Store
+*.pyc
+**/logs	
+**/.ipynb_checkpoints
+**/__pycache__
+**/env/
+**/.vscode/
+docs/
+data/*
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+features/*
+!features/.gitkeep
