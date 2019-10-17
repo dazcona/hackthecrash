@@ -2,6 +2,8 @@
 
 We developed a Machine Learning pipeline to predict accident severity and a ChatBot that provides bite-sized advice to drivers!
 
+**Winners at at HackUPC 2019 for McKinsey & Company's challenge in Barcelona**
+
 * Slides: [Insighters Hack the Crash at HackUPC 2019](https://docs.google.com/presentation/d/1sK5sU6ylB1pbYWWhIcHx5wlWGj2-LtTnmiU1Fhd6T_Y/edit?usp=sharing)
 * YouTube: [Video](https://www.youtube.com/watch?v=fVg1szW6j-s)
 
